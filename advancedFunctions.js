@@ -27,3 +27,8 @@ const compose = (f, g) => (a) => f(g(a));
 const sum = (num) => num + 1;
 
 compose(sum, sum)(5); // =7
+
+// Avoiding Side Effects, functional purity (used to avoid side effects).
+//What are the two elements of a pure function?
+1. Deterministic --> always produces the same results given the same inputs
+2. No Side Effects -->  It does not depend on any state, or data, change during a program’s execution. It must only depend on its input elements.
